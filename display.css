@@ -8,7 +8,7 @@ body {
 }
 
 header, footer {
-  font-size: medium;
+  font-size: large;
   text-align: center;
   padding: 0.3em 0;
   background-color: #4a4a4a;
@@ -58,11 +58,24 @@ footer {
 }
 
 
-img {
-	display: flex;
-	flex-direction : column;
-	align-items: center;
-	flex-wrap: wrap;
-    width:  200px;
-    height: 200px;	
+.row {
+  text-align:center;
+    margin:0 auto;
 }
+
+/* Create two equal columns that sits next to each other */
+.column {
+  display:inline-block;
+   vertical-align: middle;
+   float: none;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width:  200px;
+  height: 200px;
+  justify-content: center;
+  border: 7px solid black;
+}
+

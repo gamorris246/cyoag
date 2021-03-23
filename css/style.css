@@ -1,0 +1,33 @@
+.splash{
+	background-image: url('../images/leaves.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-color: black;
+}
+
+.container {
+	display: flex;
+	height: 550px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.item {
+  margin-top: 10px;
+  margin-bottom: 30px;
+ }
+
+.play_button {  
+	background-color: black;  
+	color: white;  
+	font-size:50px; 
+	align-content: flex-end;
+	margin-bottom: 10px;
+} 
+
+.play_button:hover {
+	background-color: darkblue;
+	color: white;
+}

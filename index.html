@@ -3,42 +3,21 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>CYOAG</title>
-		<link rel="stylesheet" href="display.css">
+		<!--<link rel="stylesheet" href="css/display.css">-->
+		<link rel="stylesheet" href="css/style.css">
+		<script src = "js/nationselector.js"></script>
 	</head>
 
-
-	<body>
-		<header>Beginning of a legend</header>
-		<main>
-			<p class = "intro">									
-				<br>Long ago, the four nations lived together in harmony.
-				<br>Then, everything changed when the Fire Nation attacked. 
-				<br>Only the Avatar, master of all four elements, could stop them, 
-				<br>but when the world needed him most, he vanished. 
-				<br>
-				<br>Fifty years have passed and the world has begun to lose hope that the avatar will ever return.
-				<br>The people of the world now face a new world, a divided world.
-				<br>Young benders from all over the world have all but forgotten of the avatar
-				<br>....and must now make their own legend. 
-			</p>
-			<p>
-				<div class = "row">
-					<div class = "column">
-						<a href = "water.html"><img src = "images/water.png" alt = "Water Tribe" title = "Water Tribe"> </a>
-						<a href = "earth.html"><img src = "images/earth.png" alt = "Earth Kingdom" title = "Earth Kingdom"> </a>
-					</div>
-					<br>
-					<div class = "column">
-						<a href = "air.html"><img src = "images/air.png" alt = "Air Nomad" title = "Air Nomad"> </a>
-						<a href = "fire.html"><img src = "images/fire.png" alt = "Fire Nation" title = "Fire Nation"> </a>
-					</div>
-				</div>
-			</p>
-					
-		</main>
-		
-		<footer>This game is a non-profit fan-based parody. Avatar: The Last Airbender and Avatar: Legend of Korra are all owned by Nickelodeon (a division of 
-			ViacomCBS), Dante DiMartino, and Bryan Konietzko. Please support the official release. 
-		</footer>
+	<body class = "splash">
+		<audio controls autoplay>
+			<source src="audio/intro.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		<div class="container">
+			<div class = "item"><h1>Beginning of a Legend</h1></div>
+			<div class = "item"><img src = "images/map.jpg" height = "400px" style="border:5px solid black"></div>
+			<a href = "intro.html"><button class="play_button">Play</button></a>
+		</div>
+		<div>
 	</body>
 </html>

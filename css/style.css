@@ -2,8 +2,9 @@
 	background-image: url('../images/leaves.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-color: black;
+	
 }
 
 .container {

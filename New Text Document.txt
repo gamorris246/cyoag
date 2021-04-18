@@ -1,0 +1,3 @@
+<footer>This game is a non-profit fan-based parody. Avatar: The Last Airbender and Avatar: Legend of Korra are all owned by Nickelodeon (a division of 
+			ViacomCBS), Dante DiMartino, and Bryan Konietzko. Please support the official release. 
+		</footer>

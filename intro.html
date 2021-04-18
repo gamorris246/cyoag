@@ -3,40 +3,47 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>CYOAG</title>
-		<link rel="stylesheet" href="css/style
-		.css">
+		<link rel="stylesheet" href="css/style.css">
 		<script src = "js/nationselector.js"></script>
 	</head>
 
 	<body class = "splash">
 		<audio autoplay loop>
-		  <source src="audio/intro.mp3" type="audio/mpeg">
+			<source src="audio/intro.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
 
-		<header>Beginning of a legend</header>
-		<main>
-			<p class = "intro">									
+		<header><a href = "index.html">Beginning of a legend</a></header>
+		
+		<div class = "flex_container">
+			<div class = "flex_item">
 				<br>Long ago, the four nations lived together in harmony.
 				<br>Then, everything changed when the Fire Nation attacked. 
 				<br>Only the Avatar, master of all four elements, could stop them, 
-				<br>but when the world needed him most, he vanished. 
+				<br>but when the world needed him most, 
+				<br>he vanished. 
 				<br>
-				<br>Fifty years have passed and the world has begun to lose hope that the avatar will ever return.
-				<br>The people of the world now face a new world, a divided world.
-				<br>Young benders from all over the world have all but forgotten of the avatar
-				<br>....and must now make their own legend. 
-			</p>
+				<br>Fifty years have passed 
+				<br>many have lost hope 
+				<br>that the avatar will ever return.
+				<br>The people of the world need more than hero.
+				<br>They need a LEGEND
+				<br>... They need you.
+				<br><br><br>
+				
+				<form action = "nationSelector.html">
+						<label for="username">..umm...Who are you again?</label>
+						<br><input type="text" placeholder = "Enter your name" id="username">
+						<br><input type="submit" value="Continue" onclick = "username()">
+				</form>				
+			</div>
+		</div>
 			
-			<p>
-				<a href = "intro.html"><button class ="button button1">Play</button></a>
-			</p>			
-		</main>
-		
-
-	
-
-		
+			
+					
+			
+								
+			
 		<footer>
 		</footer>
 	</body>

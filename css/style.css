@@ -1,28 +1,70 @@
+header{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+
 .splash{
 	background-image: url('../images/leaves.jpg');
 	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: scroll;
-	background-color: black;
-	
+    background-position: center;
+    background-size: cover;
 }
 
-.container {
+.flex_container_blank
+{
 	display: flex;
-	height: 550px;
 	align-items: center;
 	flex-direction: column;
-	justify-content: space-between;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 10%;
+	margin-right: 10%;
+	margin-left: 10%;
 }
 
-.item {
-  margin-top: 10px;
-  margin-bottom: 30px;
- }
+.flex_container {
+	background-image: url('../images/scroll.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 10%;
+	margin-right: 15%;
+	margin-left: 15%;
+}
+
+.flex_item {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.choice1 {
+	float: left;
+	background-color: yellow;
+	width: 40%;
+	margin-bottom: 30px;
+	margin-left: 30px;
+}
+
+.choice2 {
+	float: right;
+	background-color: yellow;
+	width: 40%;
+	margin-bottom: 30px;
+	margin-right: 30px;
+}
 
 .play_button {  
 	background-color: black;  
-	color: white;  
+	color: white;
+	border-radius: 10px;
 	font-size:50px; 
 	align-content: flex-end;
 	margin-bottom: 10px;
@@ -31,4 +73,28 @@
 .play_button:hover {
 	background-color: darkblue;
 	color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#user_name{
+	border: 2px solid #aaa;
+	border-radius: 4x;
+	margin: 8px 0;
+	outline: none;
+	padding: 8px;
+	box-sizing: border-box;
+	transition:.3s;
+}
+
+#user_name:focus{
+	border-color: dodgerBlue;
+	box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.nation_description{
+	display: none;
+}
+
+.nation_overlay{
+	display: none;
 }

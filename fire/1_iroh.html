@@ -5,6 +5,7 @@
 		<title>CYOAG</title>
 		<link rel="stylesheet" href="fire.css">
 		<link rel="stylesheet" href="../css/style.css">
+		<script type="text/javascript" src = "../js/script.js"></script>
 	</head>
 
 	<body class = "splash">
@@ -12,22 +13,33 @@
 		
 		<div class = "flex_container">
 			<div class = "flex_item">	<!--Story content-->
+				You Choose to Join the Prince's Royal Guard.
+				<br><br>The Prince is known to be a bit of an eccentric, but your time with him has been very enjoyable. Royalty is known not to engage with commoners, yet Iroh often invites you to sit and talk over tea. 
 				
+				<br>You have gracefully declined him <span id="refuse_count">2</span> times in the past.
+				<br>
+				
+				<div class = "ask_user"> <!--Present player with choices-->
+					<br><br><p id = "iroh_message">What will you do this time?</p><br><br>
+				</div>
 				
 				<a href = "#"> <!-- Choice 1 -->
 					<div class = "choice1">
-						
+						Accept Iroh's invitation
 					</div>
 				</a>
 				
 				<a href = "#"> <!-- Choice 2 -->
-					<div class = "choice2">
-						
+					<div class = "choice2" onclick="refuse_iroh()">
+						Humbly refuse.
 					</div>
-				</a>
-			</div>
+				</button>
+				
+			</div>	
 		</div>
 		
+					
+
 		
 	</body>
 </html>

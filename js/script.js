@@ -1,8 +1,25 @@
 var count = 3;
-var userinput = localStorage.getItem("uinput");
+
+function random_name(){
+	const name_list = ["Xiao", "Tien", "Yuan", "Jiang", "Shu", "Paku", "Zang", "Gohan", "Krillin", "Ash", "Tom"];
+	var random_name = name_list[Math.floor(Math.random() * name_list.length)];
+	/*console.log(random_name);*/
+	document.getElementById('username').value = random_name;
+}
+
+function store_name(){
+	var user = document.getElementById('username').value;
+	/*console.log(user);*/
+	sessionStorage.setItem("username", user);
+}
 
 
-function refuse_iroh() {
+window.onload = function show_name(){
+	document.getElementById('username').innerHTML = sessionStorage.getItem('username');
+}
+
+
+function refuse_iroh(){
 	document.getElementById('refuse_count').innerHTML = count++;
 	if (count > 5) 
 		{
@@ -14,14 +31,24 @@ function refuse_iroh() {
 		}
 }
 
-function store_name()
-{
-	var user = document.getElementById('username').value;
-	console.log(user);
-	sessionStorage.setItem("username", user);
+function validateForm(){
+  var check_name = document.forms["player_name"]["username"].value;
+  if (check_name == "") 
+	  {
+		alert("Generate or type a Name to Continue");
+		return false;
+	  }
 }
 
-
-window.onload = function show_name(){
-	document.getElementById('username').innerHTML = sessionStorage.getItem('username');
+function technique(learnt){
+	sessionStorage.setItem("technique", learnt);
+	console.log(learnt);
+	if (sessionStorage.getItem('technique') === "calm")
+		{	
+			document.getElementById('technique').innerHTML = "mastered the Calming breath of fire technique";
+		}
+	if (sessionStorage.getItem('technique') === "rage")
+	{	
+		document.getElementById('technique').innerHTML = "mastered the Dragon's Rampage technique";
+	}
 }

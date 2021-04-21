@@ -4,16 +4,7 @@
 		<meta charset="UTF-8">
 		<title>CYOAG</title>
 		<link rel="stylesheet" href="css/style.css">
-		
-		<script>
-			function store_name()
-			{
-				var user = document.getElementById('username').value;
-				console.log(user);
-				sessionStorage.setItem("username", user);
-			}
-		</script>
-		
+		<script src = "js/script.js"></script>	
 	</head>
 
 	<body class = "background">
@@ -38,18 +29,14 @@
 				<br>The people of the world need more than hero.
 				<br>They need a LEGEND
 				<br>... They need you.
-				<br><br><br>
-				
-				<form action = "nation_selector.html">
+				<br><br>
+				<form name = "player_name" onsubmit="return validateForm()" action = "nation_selector.html">
 					<label for="username">..umm...Who are you again?</label>
 					<br><input id="username" type="text" placeholder = "Enter your name">
+					<button type = "button" onclick = "random_name()">Generate random name</button>
 					<br><input type="submit" value="Continue" onclick = "store_name()">
-			</form>
-	
+				</form>
 			</div>
 		</div>
-			
 	</body>
-
-	
 </html>

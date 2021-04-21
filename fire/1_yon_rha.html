@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>CYOAG</title>
-		<link rel="stylesheet" href="fire.css">
 		<link rel="stylesheet" href="../css/style.css">
 		<script src = "../js/script.js"></script>
 	</head>
@@ -13,24 +12,24 @@
 			
 		<div class = "flex_container">
 			<div class = "flex_item">	<!--Story content-->					
-				You join the Southern Raiders
+				Joined the Southern Raiders
 				<br><br>
-				You are excited to join this new regiment on their first mission to scout the southern water tribe. You and the raiders travel by boat to the Southern outpost. The cold icy thundra is nothing like you have experienced before. Deployment is in 10 days. During your solo training time. 
+				You are excited to join this new regiment on their first mission to scout the southern water tribe. You and the raiders travel by boat to the Southern outpost. The cold icy thundra is nothing like you have experienced before. You can only master one technique, so you beging intense training from the advanced scrolls you have acquired.	 
 				
+				<br>
 				
-			<div class = "ask_user"> <!--Present player with choices-->
-					<br><br><p id = "iroh_message">What will you do this time?</p><br><br>					
-				</div>
+			<p class = "ask_user">Which technique will you learn?</p>
+			<p><span id = "username"></span> has <span id = "technique">not mastered any techniques yet.</span></p>
 				
-				<a href = "#"> <!-- Choice 1 -->
-					<div class = "choice1">
-						Choice 1
+				<a href = "#" value="calm" onclick="technique('calm')"> <!-- Choice 1 -->
+					<div class = "choice1"value = "calm" onclick = "technique('calm')">
+						Calming Breath of Fire
 					</div>
 				</a>
 				
-				<a href = "#"> <!-- Choice 2 -->
+				<a href = "#" value = "rampage" onclick = "technique('rage')"> <!-- Choice 2 -->
 					<div class = "choice2">
-						Choice 2
+						Dragon's Rampage
 					</div>
 				</a>	
 				</button>

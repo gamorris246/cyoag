@@ -44,9 +44,9 @@ header{
 }
 
 .ask_user {
-	font-size: 20px;
+	font-size: 35px;
 	font-family: helvetica;
-	color: green;
+	text-align: center;
 }
 
 .choice1 {
@@ -95,10 +95,43 @@ header{
 	box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
-.nation_description{
-	display: none;
+.nation_flexbox {
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 700px;
 }
 
-.nation_overlay{
-	display: none;
+.nation {
+	position: relative;
+	width: 330px;
+	margin: auto;
+	border: 2px solid;
+	padding: 5px;
+	flex-shrink:1;	
+	}
+
+.nation_description{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	font-family: helvetica;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 1s;
 }
+
+.nation_description:hover{
+	opacity: 1;
+}
+

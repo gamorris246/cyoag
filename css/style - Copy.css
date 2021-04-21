@@ -1,34 +1,16 @@
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.box {
-  width: 20%;
-  height: 20%;
-  margin: 5px;
-  background-color: red;
-}
-
-
 header{
 	text-align: center;
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.splash{
-	background-image: url('../images/leaves.jpg');
-	background-repeat: no-repeat;
-    background-position: center;
+.background{
+	background: url('../images/leaves.jpg')no-repeat center fixed;
     background-size: cover;
 }
 
 .graphics_container
 {
-	position: relative;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -39,10 +21,21 @@ header{
 	margin-left: 10%;
 }
 
-.nation_image {
-	display: block;
-	width:100%;
-	height: auto;
+.flex_container {
+	background-image: url('../images/scroll.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 10%;
+	margin-right: 15%;
+	margin-left: 15%;
+}
+
+.flex_item {
 	margin-top: 20px;
 	margin-bottom: 30px;
 	font-size: 30px;
@@ -50,29 +43,10 @@ header{
 	margin-right: 30px;
 }
 
-.nation_select {
-  display: block;
-}
-
-
-.graphics_container:hover .nation_overlay {
-  opacity: 1;
-}
-
-.nation_description {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
 .ask_user {
-	font-size: 20px;
+	font-size: 35px;
 	font-family: helvetica;
-	color: green;
+	text-align: center;
 }
 
 .choice1 {
@@ -121,10 +95,40 @@ header{
 	box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
-.nation_description{
-	display: none;
+.nation_flexbox {
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width:700px;
 }
 
-.nation_overlay{
-	display: none;
+.nation {
+	width: 100%;
+	flex: auto;
+	margin: auto;
+	border: 5px solid; 
 }
+
+.nation_description{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.nation_description:hover{
+	opacity: 1;
+}
+

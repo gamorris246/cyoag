@@ -4,7 +4,16 @@
 		<meta charset="UTF-8">
 		<title>CYOAG</title>
 		<link rel="stylesheet" href="css/style.css">
-		<script src = "js/nationselector.js"></script>
+		
+		<script>
+			function store_name()
+			{
+				var user = document.getElementById('username').value;
+				console.log(user);
+				sessionStorage.setItem("username", user);
+			}
+		</script>
+		
 	</head>
 
 	<body class = "background">
@@ -33,18 +42,14 @@
 				
 				<form action = "nation_selector.html">
 					<label for="username">..umm...Who are you again?</label>
-					<br><input type="text" placeholder = "Enter your name" id="username">
-					<br><input type="submit" value="Continue" onclick = "username()">
-				</form>				
+					<br><input id="username" type="text" placeholder = "Enter your name">
+					<br><input type="submit" value="Continue" onclick = "store_name()">
+			</form>
+	
 			</div>
 		</div>
 			
-			
-					
-			
-								
-			
-		<footer>
-		</footer>
 	</body>
+
+	
 </html>

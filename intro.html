@@ -7,7 +7,7 @@
 		<script src = "js/script.js"></script>	
 	</head>
 
-	<body class = "background">
+	<body onload = "clearStorage()" class = "background">
 		<audio autoplay loop>
 			<source src="audio/intro.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
@@ -16,27 +16,27 @@
 		<header><a href = "index.html">Beginning of a legend</a></header>
 		
 		<div class = "flex_container">
-			<div class = "flex_item">
-				<br>Long ago, the four nations lived together in harmony.
-				<br>Then, everything changed when the Fire Nation attacked. 
-				<br>Only the Avatar, master of all four elements, could stop them, 
-				<br>but when the world needed him most, 
-				<br>he vanished. 
-				<br>
-				<br>Fifty years have passed 
-				<br>many have lost hope 
-				<br>that the avatar will ever return.
-				<br>The people of the world need more than hero.
-				<br>They need a LEGEND
-				<br>... They need you.
-				<br><br>
+			<br>Long ago, the four nations lived together in harmony.
+			<br>Then, everything changed when the Fire Nation attacked. 
+			<br>Only the Avatar, master of all four elements, could stop them, 
+			<br>but when the world needed him most, 
+			<br>he vanished. 
+			<br>
+			<br>Fifty years have passed 
+			<br>many have lost hope 
+			<br>that the avatar will ever return.
+			<br>The people of the world need more than a hero.
+			<br>They need a LEGEND
+			<br>They need you.
+			<br><br>
+			<label for="username">umm...Who are you again?</label><br>
+			
 				<form name = "player_name" onsubmit="return validateForm()" action = "nation_selector.html">
-					<label for="username">..umm...Who are you again?</label>
-					<br><input id="username" type="text" placeholder = "Enter your name">
-					<button type = "button" onclick = "random_name()">Generate random name</button>
-					<br><input type="submit" value="Continue" onclick = "store_name()">
+					<input id="user_name" type="text" placeholder = "Enter your name" maxlength="10">
+					<button type = "button" onclick = "random_name()"><img src = "images/random.png" height="24px" width="24px"></button>
+					<button type="submit" value="GO" onclick = "store_name()" style = "width:38px" >GO</button>
 				</form>
-			</div>
+			
 		</div>
 	</body>
 </html>

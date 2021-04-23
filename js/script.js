@@ -35,6 +35,11 @@ function refuse_iroh(){
 		{
 		  document.getElementById('iroh_message').innerHTML = "Iroh Laughs: Refuse as many times as you want. We train tomorrow!";
 		}
+		
+	if (count > 10) 
+		{
+		  document.getElementById('iroh_message').innerHTML = "Iroh Yawns: Im going to leave you now. Stay there and keep refusing to yourelf if you want. Whatever makes you happy!";
+		}
 }
 
 function technique(learnt){
@@ -93,7 +98,7 @@ function use_technique(){
 }
 
 function clearItem(){
-	storage.removeItem(technique);	
+	sessionStorage.removeItem('technique');	
 }
 
 function clearStorage() {

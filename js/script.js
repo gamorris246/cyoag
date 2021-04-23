@@ -68,7 +68,7 @@ function technique(learnt){
 function use_technique(){
 	if (sessionStorage.getItem('technique') === "calm")
 		{	
-			document.getElementById('battle_option').innerHTML = "Your controlled breath of fire technique stealthily raises your internal temperature and allows you to stay in position without freezing";
+			document.getElementById('battle_option').innerHTML = "Used Breath of Fire to stealthily raise your internal temperature and allow you to stay in position without freezing";
 		}
 		
 	if (sessionStorage.getItem('technique') === "rage")
@@ -86,17 +86,15 @@ function use_technique(){
 		window.open('battle_armour.html', '_self');
 	}
 	
-	else
+	if (sessionStorage.getItem('technique') !== "calm" && sessionStorage.getItem('technique') !== "rage" && sessionStorage.getItem('technique') !== "sense" && sessionStorage.getItem('technique') !== "armour")
 		{	
 			window.open('no_technique_end.html', '_self');
 		}
-	
-	/*if (sessionStorage.getItem('technique') !== "calm" && sessionStorage.getItem('technique') !== "rage")
-		{	
-			window.open('endfire2.html', '_self');
-		}	*/
 }
 
+function clearItem(){
+	storage.removeItem(technique);	
+}
 
 function clearStorage() {
   sessionStorage.clear();

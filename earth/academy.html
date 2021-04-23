@@ -13,26 +13,29 @@
 		<div class = "flex_container">
 			<div>
 				<p>
-					<span id = "username"></span> joined the academy
+					Joined the academy
 				</p>
 				<p>
-					Learning earth bending is tough work. 
+					Earth bending comes naturally to you. After your first class you are able to freely move boulders twice your size. Your Earth bending teacher notices your talent and says you are ready to learn more advanced techniques and will train you in one of your choosing. 
 					<br>
 				</p>
 				
-				<p class = "ask_user"> What do you say?</p>
+				<p class = "ask_user">Which technique will you learn?</p>
 							
-				<a href = "academy.html">
+				<a href = "#" onclick= "technique('armour')">
 					<div class = "choice1">
-						Go to the Academy
+						Earth Armour
 					</div>
 				</a>
 				
-				<a href = "#" >
+				<a href = "#" onclick = "technique('sense')">
 					<div class = "choice2">
-						Go back to bed
+						Seismic Sense
 					</div>
-				</a>
+				</a>	
+				<br><br>
+				<p><span id = "technique"> No techniques mastered yet.</span></p>
+				<p><a href = "earthtrain.html" onClick = "use_technique()"><button class="button_style">Continue</button></a></p>
 			</div>			
 		</div>
 	</body>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CYOAG</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<script src = "../js/script.js"></script>
+	</head>
+
+	<body class = "background">
+		<header><a href = "../index.html">Beginning of a legend</a></header>
+		<div class = "flex_container">
+			<div class = "flex_item">	<!--Story content-->
+				You Choose to Join the Prince's Royal Guard.
+				<br><br>The Prince is known to be a bit of an eccentric, but he has proven to be a knowlegeable and caring individual. Royalty does not mix with commoners, yet Iroh often invites you to train with him. 
+				
+				<br>You have gracefully declined him <span id="refuse_count">2</span> times in the past.
+				<br>
+				
+				<div class = "ask_user"> <!--Present player with choices-->
+					<br><br><p id = "iroh_message">What will you do this time?</p><br><br>					
+				</div>
+				
+				<a href = "training.html"> <!-- Choice 1 -->
+					<div class = "choice1">
+						Accept Iroh's invitation
+					</div>
+				</a>
+				
+				<a href = "#"> <!-- Choice 2 -->
+					<div class = "choice2" onclick="refuse_iroh()">
+						Humbly refuse again.
+					</div>
+				</a>
+			</div>	
+		</div>
+	</body>
+</html>
